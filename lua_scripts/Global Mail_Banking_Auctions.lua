@@ -17,9 +17,9 @@ local function DisplayChatCommandList(event, unit, message, type, language)
     local normalizedMessage = string.lower(message)
 
 	if(normalizedMessage == "#commands") or (normalizedMessage == "$commands") then
-	unit:SendAreaTriggerMessage("|cFF00B0E8.mail  -  opens the global Mailbox|r")
-    unit:SendAreaTriggerMessage("|cFF00B0E8.bank  -  opens the global Bank|r")
-	unit:SendAreaTriggerMessage("|cFF00B0E8.auctions  -  opens the global Auction House|r") 
+	    unit:SendAreaTriggerMessage("|cFF00B0E8.mail  -  opens the global Mailbox|r")
+        unit:SendAreaTriggerMessage("|cFF00B0E8.bank  -  opens the global Bank|r")
+	    unit:SendAreaTriggerMessage("|cFF00B0E8.auctions  -  opens the global Auction House|r") 
 	end
     -- Return false to prevent further processing
 	return false
