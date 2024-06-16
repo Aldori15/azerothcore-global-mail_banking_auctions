@@ -1,3 +1,5 @@
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+
 # Global Personal Bank/Mailbox/Auction House
 Simple Lua Script that allows access to your character's bank, mailbox or auction house anywhere in the world via chat commands.  If you would like to add or change the commands, you can do so in the Lua script.
 
