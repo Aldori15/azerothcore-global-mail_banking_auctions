@@ -1,6 +1,6 @@
 -- ----------------------------------------------------------------------------------------------------------
 --  While in-game, just pre-pend any of the commands below with "!" or "."  For example, ".bank" or "!mail".
---  While in-game, you can type "#commands" or "$commands" to display the list of available commands.
+--  You can also type "#commands" or "$commands" to display the list of available commands.
 --
 --  Hosted by Aldori15 on Github: https://github.com/Aldori15/global-mail_banking_auctions 
 -- ----------------------------------------------------------------------------------------------------------
@@ -33,13 +33,10 @@ local function HandleChatCommand(event, player, message, type, language)
         for _, command in ipairs(commandList) do
             if normalizedMessage == command then
                 if action == "bank" then
-                    player:SendBroadcastMessage("|cff00cc00Welcome to your bank, |cff00ffff["..player:GetName().."]|r")
                     player:SendShowBank(player)
                 elseif action == "mail" then
-                    player:SendBroadcastMessage("|cff00cc00Opening mailbox for |cff00ffff["..player:GetName().."]|r")
                     player:SendShowMail(player)
                 elseif action == "auction" then
-                    player:SendBroadcastMessage("|cff00cc00Opening auction house for |cff00ffff["..player:GetName().."]|r")
                     player:SendAuctionMenu(player)
                 end
                 -- Return false to prevent further processing
